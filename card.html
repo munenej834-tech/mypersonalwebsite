@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Card</title>
+    </head>
+    <body>
+        <main id="card">
+        <section id="section1">
+          <center>  <img src="profile.jpg" width="20%"></center>
+            <div id="bicon">Bookmark</div>
+        </section>
+        <section id="section2">
+            <div id="name">Name</div>
+                <div id="des">Description jskdjfiojdiojijjk njihuug kjhhgfhysdfdnj jnikas kjjdfhyd kjfuryfgrygf ggsfftfd</div>
+                <div id="div3">
+                <div id="projects">42<br>projects</div>
+                <div id="clients">Clients</div>
+                <div id="years">Years</div>    
+                </div>
+           <center>    <button id="Git">Get In Touch</button></center> 
+        </section>
+        </main>
+    </body>
+    <style type="text/css">
+        body{
+            background-color: gray;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #section1{
+            background-color: gray;
+            margin:4px;
+        }
+        #card{
+            background-color: rgb(245, 244, 243);
+            border-width: 4px;
+            border-style: solid;
+            border-color: blue;
+            width: 70%;
+            margin-left: 15%;
+            height: 600px;
+        }
+        *{
+            margin:0;
+           
+        }
+        #section1{
+            display: flex;
+            position: relative;
+        }
+        #bicon{
+            display: flex;
+            position: absolute;
+            top:10%;
+            left:85%;
+        }
+        #section2{
+display:flex;
+flex-direction: column;
+
+
+        }
+        #des{
+          padding-top:9px
+           
+        }
+        #div3{
+            display: flex;
+            
+width:100%;
+justify-content: space-around;
+        }
+    #Git{
+        background-color: black;
+        color:aliceblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 18px;
+        width:70%;
+        display: flex;
+        justify-content: center;
+        height: 3rem;
+        align-items: center;
+        margin:3px;
+    }
+    #div3>*{
+        font-weight: bold;
+        font-size: larger;
+    }
+    #name{
+        font-weight: bold;;
+    }
+    </style>
+
+</html>

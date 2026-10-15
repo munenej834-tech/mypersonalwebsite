@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For looop</title>
+</head>
+<body>
+    <p id="display">This is the looping test <br></p>
+    <button id="btn" onclick="loopTest()">Trigger</button>
+</body>
+<script type="text/javascript">
+    function loopTest(){
+        let display=document.getElementById("display");
+        let range;
+        var count=0;
+        for(range=0;range<=30;range++){
+            if(range%2==0){
+                if(range==14 || range==18){
+                    continue;
+                }
+                else{
+                    count=count+1;
+                    if(count%4 == 0){
+                        display.innerHTML +=`<br><br>${range}  `
+                    }
+                    else{
+                        display.innerHTML +=`${range}  `
+                    }
+                    
+                }
+            }
+        }
+    }
+</script>
+</html>
